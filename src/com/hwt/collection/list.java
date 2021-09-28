@@ -6,6 +6,8 @@ import org.junit.Test;
 import java.util.*;
 
 public class list {
+    //测试list功能出bug了，已修复
+    //2021.9.29 测试了list集合
     @Test
     public void test() {
         List<String> list = new ArrayList<>();
