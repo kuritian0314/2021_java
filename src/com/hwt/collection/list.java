@@ -6,6 +6,7 @@ import org.junit.Test;
 import java.util.*;
 
 public class list {
+    //2021.9.29 测试了list集合
     @Test
     public void test() {
         List<String> list = new ArrayList<>();
