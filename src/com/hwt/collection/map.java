@@ -3,7 +3,6 @@ package com.hwt.collection;
 import org.junit.Test;
 
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.Map;
 
 public class map {
@@ -58,19 +57,27 @@ public class map {
         map.put("cc", 30);
         map.put("dd", 40);
 
-        Iterator<Map.Entry<String, Integer>> it = map.entrySet().iterator();
-        while (it.hasNext()) {
-            System.out.println(it.next());
-        }
+//        Iterator<Map.Entry<String, Integer>> it = map.entrySet().iterator();
+//        while (it.hasNext()) {
+//            System.out.println(it.next());
+//        }
+//
+//        System.out.println("-----map.foreach遍历mapJDK1.8新特性-----");
+//        map.forEach((key, value) -> {
+//            System.out.println("key=" + key + ",value=" + value);
+//        });
+        map.forEach((k, v) -> System.out.println("key=" + k + ", value=" + v)
+        );
 
-        System.out.println("-----map.foreach遍历mapJDK1.8新特性-----");
-        map.forEach((key, value) -> {
-            System.out.println("key=" + key + ",value=" + value);
-        });
+
+//        map.forEach(new BiConsumer<String, Integer>() {
+//            @Override
+//            public void accept(String k, Integer v) {
+//                System.out.println(k + "," + v);
+//            }
+//        });
 
     }
-
-
 }
 
 

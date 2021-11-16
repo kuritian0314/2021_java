@@ -27,7 +27,7 @@ public class demo4 {
                 //System.out.println(s);
 
                 //输出到磁盘
-                bw.write(s+"\r\n");
+                bw.write(s + "\r\n");
             }
         } catch (Exception e) {
             e.printStackTrace();

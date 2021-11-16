@@ -6,7 +6,7 @@ import java.util.concurrent.FutureTask;
 
 public class CallableTest1 implements Callable<Integer> {
     @Override
-    public Integer call() throws Exception {
+    public Integer call() {
         int i = 0;
         for (;i < 10; i++) {
             System.out.println("当前线程是：：：" + Thread.currentThread() + ":" + i);

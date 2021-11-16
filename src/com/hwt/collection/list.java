@@ -17,9 +17,18 @@ public class list {
         list.add("cc");
         System.out.println(list.size());
 
+//        for (String s : list) {
+//            System.out.println(s);
+//        }
+
         for (int i = 0; i < list.size(); i++) {
             System.out.println(list.get(i));
+
         }
+
+//        for (int i = 0; i < list.size(); i++) {
+//            System.out.println(list.get(i));
+//        }
     }
 
     @Test
@@ -53,8 +62,12 @@ public class list {
         ListIterator it = list.listIterator();
         while (it.hasNext()) {
             News s = (News) it.next();
-            System.out.println(s.getId() + "," + s.getTitle() + "," + s.getAuthor());
+            System.out.println("{" + s.getId() + "," + s.getTitle() + "," + s.getAuthor() + "}") ;
         }
+//        Iterator it = list.listIterator();
+//        while (it.hasNext()) {
+//            System.out.println(it.next());
+//        }
     }
 
     @Test
@@ -68,8 +81,11 @@ public class list {
         System.out.println("链表的第一个元素是：" + linkedList.getFirst());
         System.out.println("链表的最后一个元素是：" + linkedList.getLast());
 
-        for (String str: linkedList) {
-            System.out.println(str);
+//        for (String str: linkedList) {
+//            System.out.println(str);
+//        }
+        for (String s : linkedList) {
+            System.out.println(s);
         }
 
     }
@@ -87,4 +103,5 @@ public class list {
             System.out.println(my[i]);
         }
     }
+
 }
