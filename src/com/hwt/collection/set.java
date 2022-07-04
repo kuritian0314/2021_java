@@ -9,7 +9,7 @@ import java.util.Set;
 public class set {
     @Test
     public void test() {
-        HashSet<String> set=new HashSet<String>();
+        HashSet<String> set = new HashSet<String>();
         set.add(new String("abc"));
         set.add(new String("abc"));
         set.add(new String("abc"));
@@ -38,6 +38,7 @@ public class set {
         }
 
     }
+
     @Test
     public void test2() {
         Set<String> set1 = new HashSet<String>();
@@ -49,7 +50,7 @@ public class set {
 
         //使用lambda遍历Set
         System.out.println("=========3.使用lambda遍历Set集合(一)===========");
-        set1.forEach(n->System.out.println(n));
+        set1.forEach(n -> System.out.println(n));
         //使用lambda遍历Set
         System.out.println("=========3.使用lambda遍历Set集合(二)===========");
         set1.forEach(System.out::println);

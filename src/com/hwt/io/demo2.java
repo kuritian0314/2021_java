@@ -13,7 +13,7 @@ public class demo2 {
         try {
             fos = new FileOutputStream(f);
 
-            String s = "Westlife - Better man\r\n西城男孩 - 更完美的人";
+            String s = "Westlife - Better man\r\n西城男孩 - 更完美的人！！！！！！！";
 
             fos.write(s.getBytes());
         } catch (Exception e) {

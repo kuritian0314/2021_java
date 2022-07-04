@@ -1,6 +1,6 @@
 package com.hwt.entity;
 
-public class News{
+public class News {
     private int id;
     private String title;
     private String author;

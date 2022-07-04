@@ -19,7 +19,7 @@ public class demo1 {
             //如果read()返回-1，则说明读取完毕
             while ((n = fis.read(bytes)) != -1) {
                 //将字节转换成string
-                //此时实例化s时,要注意指定编码格式,电脑上文档默认的是GBK,而我这边默认的是utf-8，
+                //此时实例化s时,要注意指定编码格式,电脑上文档默认的是GBK,而我这边默认的是utf-8，UTF-8
                 //所以如果不指定格式的话,最后输出的中文会出现乱码
                 String s = new String(bytes, 0, n,"UTF-8");
                 System.out.println(s);
